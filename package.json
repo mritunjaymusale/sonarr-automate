@@ -1,12 +1,11 @@
 {
   "dependencies": {
-    "puppeteer": "^19.2.2"
+    "puppeteer": "^19.7.2"
   },
   "name": "sonarr-automate",
   "description": "automate sonarr for manual imports of shows even though names are correct",
   "version": "1.0.0",
   "main": "main.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node main.js"

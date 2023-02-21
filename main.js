@@ -6,7 +6,9 @@ import * as fs from "fs";
     const browser = await puppeteer.launch({ headless: false ,defaultViewport: null});
     const page = await browser.newPage();
     
-    // auth.json contains the cookies that you have to manually copy from the browser
+    // auth.json contains the cookies that you have to manually copy from the browser or you can use 
+    // npx playwright codegen --save-storage=auth.json <url>
+    // pickup whats in the cookies section and paste it in auth.json
     let rawdata = fs.readFileSync('auth.json');
     let cookies = JSON.parse(rawdata);
     
